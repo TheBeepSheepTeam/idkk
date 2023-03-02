@@ -338,7 +338,10 @@ class ForeverAssets
 			// trace('[NOTE ERROR] $e');
 
 			// load default so the game won't explode in front of you;
-			Note.resetNote(framesArg, changeableSkin, assetModifier, newNote);
+			var framesArgument:String = "NOTE_assets";
+			if (framesArg is String)
+				framesArgument = framesArg;
+			Note.resetNote(framesArgument, changeableSkin, assetModifier, newNote);
 			newNote.setGraphicSize(Std.int(newNote.width * (assetModifier == "pixel" ? PlayState.daPixelZoom : 0.7)));
 			newNote.updateHitbox();
 		}
