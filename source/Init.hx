@@ -4,6 +4,7 @@ import flixel.FlxG;
 import flixel.FlxState;
 import openfl.filters.BitmapFilter;
 import openfl.filters.ColorMatrixFilter;
+import core.ModCore;
 
 /** 
  * Enumerator for settingtypes
@@ -272,6 +273,8 @@ class Init extends FlxState
 		// load controls and highscore
 		ScoreUtils.loadScores();
 		loadControls();
+
+		ModCore.reload();
 
 		loadSettings();
 
