@@ -19,7 +19,7 @@ import sys.io.File;
 
 class Paths
 {
-	public static final SOUND_EXT = ['ogg', 'wav', mp3, flac];
+	public static final SOUND_EXT = ['ogg', 'wav', 'mp3', 'flac'];
 
 	public static final scriptExts = ['hx', 'hxs', 'hscript', 'hxc'];
 
@@ -123,7 +123,7 @@ class Paths
 	{
 		for (i in scriptExts)
 		{
-			if (Assets.exists('assets/$key.$i, TEXT))
+			if (Assets.exists('assets/$key.$i', TEXT))
 			{
 				return 'assets/$key.$i';
 			}
