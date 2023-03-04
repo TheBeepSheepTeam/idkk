@@ -66,7 +66,7 @@ echo Press any key to install discord-rpc.
 haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
 pause >nul
 echo Press any key to install polymod.
-haxelib git polymod https://github.com/MasterEric/polymod
+haxelib git polymod-joalor64 https://github.com/Joalor64GH/polymod-joalor64
 pause >nul
 TIMEOUT 4 >nul
 echo Press any key to continue with the installation of VSCommunity and its dependencies.
